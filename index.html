@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>ITMD-361</title>
+</head>
+<body>
+	<form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+	<h1>Volunteer Form</h1>
+	<fieldset>
+		<legend><strong>My Info</strong></legend>
+		<p><label>First Name: <input type="text" name="first_name_field"></label></p>
+		<p><label>Last Name: <input type="text" name="last_name_field"></label></p>
+		<p><label>Phone Number: <input type="text" name="phone_field"></label></p>
+		<p><label>Email Address: <input type="text" name="email_field"></label></p>
+		<p><label>Gender:</label>
+			<input type="radio" name="gender_field" value="male">Male
+			<input type="radio" name="gender_field" value="female">Female
+		</p>
+		<p><label for="age">Age:</label>
+			<select name="age_field" id="age">
+				<option value="under 18">under 18</option>
+				<option value="18-24">18-24</option>
+				<option value="25-34">25-34</option>
+				<option value="35-44">35-44</option>
+				<option value="45-54">45-54</option>			
+				<option value="55-64">55-64</option>
+				<option value="65 and over">65 and over</option>
+			</select>
+		</p>
+	</fieldset>
+	<fieldset>
+			<legend>My Availability</legend>
+			<label>Days Available: </label>
+				<p><input type="checkbox" name="available_field[]" value="sunday">Sunday</p>
+				<p><input type="checkbox" name="available_field[]" value="Monday">Monday</p>
+				<p><input type="checkbox" name="available_field[]" value="Tuesday">Tuesday</p>
+				<p><input type="checkbox" name="available_field[]" value="Wednesday">Wednesday</p>
+				<p><input type="checkbox" name="available_field[]" value="Thursday">Thursday</p>
+				<p><input type="checkbox" name="available_field[]" value="Friday">Friday</p>
+				<p><input type="checkbox" name="available_field[]" value="Saturday">Saturday</p>
+
+			<label for="comments">Any Comments?</label>
+				<p><textarea id="comments" cols="80" rows="20" name="comments_field"></textarea></p>
+			<input type="hidden" name="hidden_field" value="woohee">
+	</fieldset>
+	<fieldset>
+		<input type="submit" value="Send Me">
+	</fieldset>
+</form>
+</body>
+</html>
